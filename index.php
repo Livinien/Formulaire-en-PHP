@@ -12,6 +12,8 @@
     <title>Sign Up ang Login Form</title>
 </head>
 
+<!-- LOGIN -->
+
 <body>
     <main>
         <div class="box">
@@ -23,7 +25,7 @@
                             <h3>Logo</h3>
                         </div>
                         <div class="heading">
-                            <h2>Bienvenue</h2>
+                            <h2>Login</h2>
                         </div>
                         <div class="actual-form">
                             <div class="input-wrap">
@@ -35,10 +37,54 @@
                                 <label>Mot de Passe</label>
                             </div>
                         </div>
-                        <button type="submit" value="loginButton" class="loginButton">S'inscrire</button>
+                        <button type="submit" value="loginButton" class="loginButton">Se Connecter</button>
 
                         <div class="account">
                             <h6>Pas encore de compte ?</h6>
+                            <a href="#" class="toggle">S'inscrire</a>
+                        </div>
+                    </form>
+
+                    <!-- SIGN UP -->
+
+                    <form action="index.php" autocomplete="off" class="signUp">
+                        <div class="logo">
+                            <img src="./img/Logo.png" alt="logo">
+                            <h3>Logo</h3>
+                        </div>
+                        <div class="heading">
+                            <h2>Sign Up</h2>
+                        </div>
+                        <div class="actual-form">
+                            <div class="input-wrap">
+                                <input type="text" minlength="4" class="input-field" autocomplete="off" required>
+                                <label>Prénom</label>
+                            </div>
+
+                            <div class="input-wrap">
+                                <input type="text" minlength="4" class="input-field" autocomplete="off" required>
+                                <label>Nom</label>
+                            </div>
+
+                            <div class="input-wrap">
+                                <input type="email" minlength="4" class="input-field" autocomplete="off" required>
+                                <label>Email</label>
+                            </div>
+
+                            <div class="input-wrap">
+                                <input type="password" minlength="4" class="input-field" autocomplete="off" required>
+                                <label>Mot de Passe</label>
+                            </div>
+
+                            <div class="input-wrap">
+                                <input type="password" minlength="4" class="input-field" autocomplete="off" required>
+                                <label>Confirmez votre mot de passe</label>
+                            </div>
+                        </div>
+                        <button type="submit" value="loginButton" class="loginButton">Se Connecter</button>
+
+                        <div class="account">
+                            <h6>Vous avez déjà un compte</h6>
                             <a href="#" class="toggle">S'inscrire</a>
                         </div>
                     </form>
