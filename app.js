@@ -17,7 +17,7 @@ inputs.forEach((inp) => {
 
 
 
-// ANIMATION CAROUSEL //
+// ANIMATION SLIDE //
 
 toggle_btn.forEach((btn) => {
     btn.addEventListener("click", () => {
