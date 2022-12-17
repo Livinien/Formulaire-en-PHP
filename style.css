@@ -80,16 +80,8 @@ form {
 }
 
 .heading h2 {
-    font-size: 35px;
-    font-weight: bold;
-    color: #151111;
-}
-
-.heading h6 {
-    display: inline;
-    color: #bababa;
-    font-weight: 400;
-    font-size: 15px;
+    display: flex;
+    justify-content: center;
 }
 
 .toggle {
@@ -99,6 +91,7 @@ form {
     font-weight: bold;
     transition: 0.3s ease-in-out;
 }
+
 
 .toggle:hover {
     color: #8371fd;
@@ -130,4 +123,48 @@ label {
     font-size: 15px;
     color: #bbb;
     pointer-events: none;
+    transition: 0.4s;
+}
+
+.input-field.active {
+    border-bottom-color: #151111;
+}
+
+.input-field.active + label {
+    font-size: 13px;
+    top: -2px;
+}
+
+.loginButton {
+    display: inline-block;
+    height: 43px;
+    width: 100%;
+    background-color: #151111;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.loginButton:hover {
+    background-color: #8371fd;
+}
+
+.account h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: #151111;
+}
+
+.account h6 {
+    display: inline;
+    color: #bababa;
+    font-weight: 400;
+    font-size: 15px;
 }

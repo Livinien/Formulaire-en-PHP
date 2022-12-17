@@ -19,13 +19,11 @@
                 <div class="forms-wrap">
                     <form action="index.php" autocomplete="off" class="login">
                         <div class="logo">
-                            <img src="./img/logo.png" alt="logo">
+                            <img src="./img/Logo.png" alt="logo">
                             <h3>Logo</h3>
                         </div>
                         <div class="heading">
                             <h2>Bienvenue</h2>
-                            <h6>Pas encore de compte</h6>
-                            <a href="#" class="toggle">Sign Up</a>
                         </div>
                         <div class="actual-form">
                             <div class="input-wrap">
@@ -36,6 +34,12 @@
                                 <input type="password" minlength="4" class="input-field" autocomplete="off" required>
                                 <label>Mot de Passe</label>
                             </div>
+                        </div>
+                        <button type="submit" value="loginButton" class="loginButton">S'inscrire</button>
+
+                        <div class="account">
+                            <h6>Pas encore de compte ?</h6>
+                            <a href="#" class="toggle">S'inscrire</a>
                         </div>
                     </form>
                 </div>
