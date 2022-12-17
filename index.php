@@ -25,7 +25,7 @@
                             <h3>Logo</h3>
                         </div>
                         <div class="heading">
-                            <h2>Login</h2>
+                            <h2>Connexion</h2>
                         </div>
 
                         <div class="actual-form">
@@ -56,7 +56,7 @@
                             <h3>Logo</h3>
                         </div>
                         <div class="heading">
-                            <h2>Sign Up</h2>
+                            <h2>Inscription</h2>
                         </div>
                         <div class="actual-form">
                             <div class="input-wrap">
