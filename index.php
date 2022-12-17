@@ -27,16 +27,19 @@
                         <div class="heading">
                             <h2>Login</h2>
                         </div>
+
                         <div class="actual-form">
                             <div class="input-wrap">
                                 <input type="text" minlength="4" class="input-field" autocomplete="off" required>
                                 <label>Prénom</label>
                             </div>
+
                             <div class="input-wrap">
                                 <input type="password" minlength="4" class="input-field" autocomplete="off" required>
                                 <label>Mot de Passe</label>
                             </div>
                         </div>
+
                         <button type="submit" value="loginButton" class="loginButton">Se Connecter</button>
 
                         <div class="account">
@@ -72,26 +75,27 @@
                             </div>
 
                             <div class="input-wrap">
-                                <input type="password" minlength="4" class="input-field" autocomplete="off" required>
+                                <input type="password" class="input-field" autocomplete="off" required>
                                 <label>Mot de Passe</label>
                             </div>
 
                             <div class="input-wrap">
-                                <input type="password" minlength="4" class="input-field" autocomplete="off" required>
+                                <input type="password" class="input-field" autocomplete="off" required>
                                 <label>Confirmez votre mot de passe</label>
                             </div>
                         </div>
-                        <button type="submit" value="loginButton" class="loginButton">Se Connecter</button>
+
+                        <button type="submit" value="loginButton" class="loginButton">S'inscrire</button>
 
                         <div class="account">
-                            <h6>Vous avez déjà un compte</h6>
-                            <a href="#" class="toggle">S'inscrire</a>
+                            <h6>Vous avez déjà un compte ?</h6>
+                            <a href="#" class="toggle">Se Connecter</a>
                         </div>
                     </form>
                 </div>
 
 
-                <div class="carrousel"></div>
+                <div class="carousel"></div>
             </div>
         </div>
     </main>
