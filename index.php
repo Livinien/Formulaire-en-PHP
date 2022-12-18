@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Sign Up ang Login Form</title>
+    <title>Sign Up and Login Form</title>
 </head>
 
 <!-- LOGIN -->
@@ -94,8 +94,29 @@
                     </form>
                 </div>
 
+                <div class="carousel">
+                    <div class="images-wrapper">
+                        <img src="./img/étudiante.jpeg" class="image img-1 show" alt="Image slide - Bibliothécaire">
+                        <img src="./img/Workspace.jpg" class="image img-2" alt="Image slide - Workspace">
+                        <img src="./img/Diplomés.jpg" class="image img-3" alt="Image slide - Fille Diplômé">
+                    </div>
 
-                <div class="carousel"></div>
+                    <div class="text-slider">
+                        <div class="text-wrap">
+                            <div class="text-group">
+                                <h2>Créer tes propres cours</h2>
+                                <h2>Personnaliser comme vous le souhaitez</h2>
+                                <h2>Invite tes étudiants dans ta classe</h2>
+                            </div>
+                        </div>
+
+                        <div class="bullets">
+                            <span class="active" data-value="1"></span>
+                            <span data-value="2"></span>
+                            <span data-value="3"></span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>

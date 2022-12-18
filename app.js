@@ -3,6 +3,11 @@
 const inputs = document.querySelectorAll(".input-field");
 const toggle_btn = document.querySelectorAll(".toggle");
 const main = document.querySelector("main");
+const bullets = document.querySelectorAll(".bullets span");
+const images = document.querySelectorAll(".image");
+
+
+// ANIMATION INPUTS //
 
 inputs.forEach((inp) => {
     inp.addEventListener("focus", () => {
@@ -23,4 +28,26 @@ toggle_btn.forEach((btn) => {
     btn.addEventListener("click", () => {
         main.classList.toggle("sign-up-mode");
     });
+});
+
+
+// ANIMATION SLIDER //
+
+function moveSlider() {
+    let index = this.dataset.value;
+
+    let currentImage = document.querySelector(`.img-${index}`);
+    images.forEach((img) => img.classList.remove('show'));
+    currentImage.classList.add("show");
+
+    // Slide des titres sous les images //
+    const textSlider = document.querySelector(".text-group");
+    textSlider.style.transform = `translateY(${-(index - 1) * 30}px)`;
+
+    bullets.forEach(bull => bull.classList.remove("active"));
+    this.classList.add("active");
+}
+
+bullets.forEach((bullet) => {
+    bullet.addEventListener("click", moveSlider);
 });
