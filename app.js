@@ -80,12 +80,24 @@ function trigger() {
         if(no == 1) {
             faible.classList.add("active");
             texte.style.display = "block";
+            texte.textContent = "Ton mot de passe est trop faible";
+            texte.classList.add("faible");
+        }
+
+        if(no == 2) {
+            moyen.classList.add("active");
+            texte.textContent = "Ton mot de passe est moyen";
+            texte.classList.add("moyen");
+
+        } else {
+            moyen.classList.remove("active");
+            texte.classList.remove("moyen");
         }
         
         
     } else {
         indicator.style.display = "none";
         texte.style.display = "none";
-
+        
     }
 }

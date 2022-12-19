@@ -50,7 +50,7 @@
                                 <span class="fort"></span>
                             </div>
 
-                            <div class="texte">Ton mot de passe est trop faible</div>
+                            <div class="texte"></div>
                         </div>
 
                         <button type="submit" value="loginButton" class="loginButton">Se Connecter</button>
