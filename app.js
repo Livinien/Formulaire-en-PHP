@@ -71,11 +71,15 @@ function trigger() {
         indicator.style.display = "block";
         indicator.style.display = "flex";
 
+        // Condition pour la longueur du mot de passe //
+
         if(input.value.length <= 3 && (input.value.match(regexFaible) || input.value.match(regexMoyen) || input.value.match(regexFort))) no=1;
 
         if(input.value.length >= 6 && ((input.value.match(regexFaible) && input.value.match(regexMoyen)) || (input.value.match(regexMoyen) && input.value.match(regexFort)) || (input.value.match(regexFaible) && input.value.match(regexFort)))) no=2;
 
         if(input.value.length >= 6 && input.value.match(regexFaible) && input.value.match(regexMoyen) && input.value.match(regexFort)) no=3;
+
+        // Mot de passe faible //
 
         if(no == 1) {
             faible.classList.add("active");
@@ -83,6 +87,9 @@ function trigger() {
             texte.textContent = "Ton mot de passe est trop faible";
             texte.classList.add("faible");
         }
+
+
+        // Mot de passe moyen //
 
         if(no == 2) {
             moyen.classList.add("active");
@@ -94,6 +101,7 @@ function trigger() {
             texte.classList.remove("moyen");
         }
 
+        // Mot de passe fort //
 
         if(no == 3) {
             moyen.classList.add("active");
