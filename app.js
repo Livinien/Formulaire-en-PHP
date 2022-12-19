@@ -93,6 +93,18 @@ function trigger() {
             moyen.classList.remove("active");
             texte.classList.remove("moyen");
         }
+
+
+        if(no == 3) {
+            moyen.classList.add("active");
+            fort.classList.add("active");
+            texte.textContent = "Ton mot de passe est élevé";
+            texte.classList.add("fort");
+
+        } else {
+            fort.classList.remove("active");
+            texte.classList.remove("fort");
+        }
         
         
     } else {
