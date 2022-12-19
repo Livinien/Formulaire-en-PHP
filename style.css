@@ -204,6 +204,72 @@ main.sign-up-mode .carousel {
 }
 
 
+
+/* LONGUEUR DU MOT DE PASSE */
+
+.indicator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10px;
+    margin: 10px 0;
+    display: none;
+}
+
+.indicator span {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: lightgrey;
+    border-radius: 5px;
+}
+
+.indicator span.moyen {
+    margin: 0 3px;
+}
+
+.indicator span:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.indicator span.active.faible:before {
+    background-color: #ff4757;
+}
+
+.indicator span.active.moyen:before {
+    background-color: orange;
+}
+
+.indicator span.active.fort:before {
+    background-color: #23ad5c;
+}
+
+.texte {
+    display: none;
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: -10px;
+}
+
+.texte.faible {
+    color: #ff4757;
+}
+
+.texte.moyen {
+    color: orange;
+}
+
+.texte.fort {
+    color: #23ad5c;
+}
+
+
 /* CAROUSEL */
 
 .carousel {

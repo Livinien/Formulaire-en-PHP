@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel=" stylesheet" href="style.css">
+
+
+
     <title>Sign Up and Login Form</title>
 </head>
 
@@ -35,9 +39,18 @@
                             </div>
 
                             <div class="input-wrap">
-                                <input type="password" minlength="4" class="input-field" autocomplete="off" required>
+                                <input type="password" onkeyup="trigger()" class="input-field" id="hello"
+                                    autocomplete="off" required>
                                 <label>Mot de Passe</label>
                             </div>
+
+                            <div class="indicator">
+                                <span class="faible"></span>
+                                <span class="moyen"></span>
+                                <span class="fort"></span>
+                            </div>
+
+                            <div class="texte">Ton mot de passe est trop faible</div>
                         </div>
 
                         <button type="submit" value="loginButton" class="loginButton">Se Connecter</button>

@@ -1,10 +1,17 @@
-// ANIMATION INPUTS //
 
 const inputs = document.querySelectorAll(".input-field");
 const toggle_btn = document.querySelectorAll(".toggle");
 const main = document.querySelector("main");
 const bullets = document.querySelectorAll(".bullets span");
 const images = document.querySelectorAll(".image");
+
+
+const indicator = document.querySelector(".indicator");
+const input = document.getElementById("hello");
+const faible = document.querySelector(".faible");
+const moyen = document.querySelector(".moyen");
+const fort = document.querySelector(".fort");
+const texte = document.querySelector(".texte");
 
 
 // ANIMATION INPUTS //
@@ -51,3 +58,34 @@ function moveSlider() {
 bullets.forEach((bullet) => {
     bullet.addEventListener("click", moveSlider);
 });
+
+
+// AFFICHAGE DE LA LONGUEUR DU MOT DE PASSE //
+
+let regexFaible = /[a-z]/;
+let regexMoyen = /\d+/;
+let regexFort = /.[!,@,#,$,%,^,&,*,?,_,-,(,)]/;
+
+function trigger() {
+    if(input.value != "") {
+        indicator.style.display = "block";
+        indicator.style.display = "flex";
+
+        if(input.value.length <= 3 && (input.value.match(regexFaible) || input.value.match(regexMoyen) || input.value.match(regexFort))) no=1;
+
+        if(input.value.length >= 6 && ((input.value.match(regexFaible) && input.value.match(regexMoyen)) || (input.value.match(regexMoyen) && input.value.match(regexFort)) || (input.value.match(regexFaible) && input.value.match(regexFort)))) no=2;
+
+        if(input.value.length >= 6 && input.value.match(regexFaible) && input.value.match(regexMoyen) && input.value.match(regexFort)) no=3;
+
+        if(no == 1) {
+            faible.classList.add("active");
+            texte.style.display = "block";
+        }
+        
+        
+    } else {
+        indicator.style.display = "none";
+        texte.style.display = "none";
+
+    }
+}
