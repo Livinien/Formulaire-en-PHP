@@ -39,18 +39,9 @@
                             </div>
 
                             <div class="input-wrap">
-                                <input type="password" onkeyup="trigger()" class="input-field" id="hello"
-                                    autocomplete="off" required>
+                                <input type="password" class="input-field" autocomplete="off" required>
                                 <label>Mot de Passe</label>
                             </div>
-
-                            <div class="indicator">
-                                <span class="faible"></span>
-                                <span class="moyen"></span>
-                                <span class="fort"></span>
-                            </div>
-
-                            <div class="texte"></div>
                         </div>
 
                         <button type="submit" value="loginButton" class="loginButton">Se Connecter</button>
@@ -71,6 +62,7 @@
                         <div class="heading">
                             <h2>Inscription</h2>
                         </div>
+
                         <div class="actual-form">
                             <div class="input-wrap">
                                 <input type="text" minlength="4" class="input-field" autocomplete="off" required>
@@ -88,13 +80,31 @@
                             </div>
 
                             <div class="input-wrap">
-                                <input type="password" class="input-field" autocomplete="off" required>
+                                <input onkeyup="trigger()" type="password" class="input-field" autocomplete="off"
+                                    id="hello" required>
                                 <label>Mot de Passe</label>
                             </div>
 
+                            <div class="indicator1">
+                                <span class="faible1"></span>
+                                <span class="moyen1"></span>
+                                <span class="fort1"></span>
+                            </div>
+
+                            <div class="texte"></div>
+
+
                             <div class="input-wrap">
-                                <input type="password" class="input-field" autocomplete="off" required>
+                                <input type="password" class="input-field" autocomplete="off" id="password2" required>
                                 <label>Confirmez votre mot de passe</label>
+
+                                <div class="indicator">
+                                    <span class="faible"></span>
+                                    <span class="moyen"></span>
+                                    <span class="fort"></span>
+                                </div>
+
+                                <div class="texte"></div>
                             </div>
                         </div>
 

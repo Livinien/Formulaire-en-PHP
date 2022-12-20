@@ -84,7 +84,7 @@ function trigger() {
         if(no == 1) {
             faible.classList.add("active");
             texte.style.display = "block";
-            texte.textContent = "Ton mot de passe est trop faible";
+            texte.textContent = "Votre mot de passe est faible";
             texte.classList.add("faible");
         }
 
@@ -93,7 +93,7 @@ function trigger() {
 
         if(no == 2) {
             moyen.classList.add("active");
-            texte.textContent = "Ton mot de passe est moyen";
+            texte.textContent = "Votre mot de passe est moyen";
             texte.classList.add("moyen");
 
         } else {
@@ -106,7 +106,7 @@ function trigger() {
         if(no == 3) {
             moyen.classList.add("active");
             fort.classList.add("active");
-            texte.textContent = "Ton mot de passe est élevé";
+            texte.textContent = "Votre mot de passe est élevé";
             texte.classList.add("fort");
 
         } else {
