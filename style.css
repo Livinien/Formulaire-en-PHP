@@ -122,7 +122,6 @@ form.signUp {
     padding: 0;
     font-size: 15px;
     color: #151111;
-    margin-bottom: 30px;
 }
 
 label {
@@ -213,7 +212,7 @@ main.sign-up-mode .carousel {
     justify-content: space-between;
     align-items: center;
     height: 10px;
-    margin: 20px 0;
+    margin: 23px 0;
     display: none;
 }
 
@@ -223,11 +222,11 @@ main.sign-up-mode .carousel {
     width: 100%;
     background: lightgrey;
     border-radius: 5px;
-    margin-top: -130px;
+    margin-top: -76px;
 }
 
 .indicator span.moyen {
-    margin: -130px 3px 0 3px;
+    margin: -76px 3px 0 3px;
 }
 
 .indicator span:before {
@@ -254,9 +253,9 @@ main.sign-up-mode .carousel {
 
 .texte {
     display: none;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bold;
-    margin: -20px 0 30px 0px;
+    margin: -55px 0 23px 0px;
 }
 
 .texte.faible {
